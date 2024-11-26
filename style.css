@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+:root {
+  --dark-purple: hsl(256, 67%, 59%);
+  --light-purple: hsl(254, 88%, 90%);
+  --light-yellow: hsl(31, 66%, 93%);
+  --dark-yellow: hsl(39, 100%, 71%);
+  --black: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+}
+
+img {
+  size: 100%;
+  /* width: 250px; */
+}
+
+.container {
+  width: 1080px;
+  height: 80%;
+  margin: auto;
+  /* border: 1px solid blue; */
+  background-color: #f0eeee;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 4fr 1fr 2fr 3fr;
+  gap: 15px;
+  padding: 10px;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--dark-purple);
+}
+
+.container > div {
+  flex-basis: 220px;
+  border-radius: 15px;
+  /* border: 1px solid gold; */
+}
+
+/* Social media faster */
+.container > div:nth-of-type(1) {
+  grid-row: 1;
+  grid-column: 2/4;
+  padding: 20px;
+  background-color: var(--dark-purple);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container > div:nth-of-type(1) img {
+  height: 10%;
+}
+
+.container > div:nth-of-type(1) span {
+  color: var(--dark-yellow);
+}
+
+.container > div:nth-of-type(1) p {
+  font-size: 3.5rem;
+}
+
+/* Manage multiple platforms */
+.container > div:nth-of-type(2) {
+  grid-row: 2/4;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+  background-color: var(--white);
+}
+
+.container > div:nth-of-type(2) img {
+  margin-top: -5px;
+  width: 150%;
+  align-self: flex-start;
+}
+
+.container > div:nth-of-type(2) p {
+  font-size: 1.6rem;
+  margin-right: 5px;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+
+/* maintain a consistent posting schedule */
+.container > div:nth-of-type(3) {
+  grid-row: 2/4;
+  grid-column: 3;
+
+  background-color: var(--dark-yellow);
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.container > div:nth-of-type(3) p {
+  font-size: 1.6rem;
+  flex: 2;
+  margin-top: -10px;
+}
+
+.container > div:nth-of-type(3) img {
+  width: 100%;
+  height: 144px;
+  margin-bottom: -5.3rem;
+}
+
+/* Schedule to social media. */
+.container > div:nth-of-type(4) {
+  grid-row: 1/4;
+  grid-column: 4;
+
+  background-color: var(--light-purple);
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.container > div:nth-of-type(4) img {
+  height: 60%;
+}
+
+.container > div:nth-of-type(4) p {
+  font-size: 1.8rem;
+}
+
+.container > div:nth-of-type(4) small {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Grow followers with non-stop content */
+.container > div:nth-of-type(5) {
+  grid-row: 4;
+  grid-column: 3/5;
+
+  background-color: var(--dark-purple);
+  color: var(--white);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > div:nth-of-type(5) img {
+  width: 60%;
+  margin-right: 20px;
+}
+
+.container > div:nth-of-type(5) p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* >56% */
+.container > div:nth-of-type(6) {
+  grid-row: 4;
+  grid-column: 2;
+
+  background-color: var(--white);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container > div:nth-of-type(6) img {
+  width: 90%;
+}
+
+.container > div:nth-of-type(6) p {
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.container > div:nth-of-type(6) small {
+  font-size: 1rem;
+}
+
+/* Create and schedule content quicker */
+.container > div:nth-of-type(7) {
+  background-color: lightyellow;
+  padding: 20px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  grid-row: 1/3;
+  grid-column: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div:nth-of-type(7) img {
+  width: 70%;
+  margin-top: 15px;
+}
+
+/* Write your content using AI. */
+.container > div:nth-of-type(8) {
+  grid-row: 3/5;
+  grid-column: 1;
+
+  background-color: var(--dark-yellow);
+  padding: 15px;
+  font-size: 2.3rem;
+  font-weight: 530;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > div:nth-of-type(8) img {
+  width: 80%;
+}
